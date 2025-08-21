@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <shape xmlns:android="http://schemas.android.com/apk/res/android"
+        android:shape="rectangle">
+
+        <!-- Ichki fon rangi -->
+        <solid android:color="#00D30A"/>
+
+        <!-- Chekka chiziq (border) -->
+        <stroke
+            android:width="2dp"
+            android:color="#F80000"/> <!-- Qora chiziq -->
+
+        <!-- Burchaklar -->
+        <corners android:radius="8dp"/> <!-- Ixtiyoriy: yumaloqlik -->
+    </shape>
+
+</selector>
