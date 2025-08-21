@@ -1,35 +1,32 @@
-# Android Layouts – Module 3, Lesson 4
-
-📌 Ushbu loyihada Android `FrameLayout` va `RelativeLayout` bilan ishlash mashqlari bajarildi.  
-Bir nechta rangli `View` lar `FrameLayout` ichida joylashtirilib, `layout_margin` orqali kichraytirib ustma-ust joylash effekti qilindi.
-
----
-
-
----
-
-## 📂 Kod namunasi
-```xml
-<FrameLayout
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/red">
+    android:background="@color/black">
 
     <View
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_margin="25dp"
-        android:background="#A867B6"/>
+        android:background="@color/red"/>
 
     <View
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_margin="50dp"
-        android:background="#8CD900"/>
+        android:background="#A867B6"/>
 
     <View
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_margin="75dp"
+        android:background="#8CD900"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="100dp"
         android:background="#47C9FF"/>
+
 </FrameLayout>
