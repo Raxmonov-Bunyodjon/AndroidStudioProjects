@@ -1,24 +1,68 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
+    android:columnCount="4"
+    android:gravity="center"
+    android:orientation="horizontal"
     tools:context=".MainActivity">
 
-    <LinearLayout
-        android:translationZ="10dp"
-        android:layout_width="300dp"
-        android:layout_height="300dp"
-        android:background="@color/my_color2" />
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:columnCount="4">
 
-    <LinearLayout
-        android:translationZ="20dp"
-        android:background="@color/my_color"
-        android:layout_width="100dp"
-        android:layout_height="100dp"/>
+        <Button android:text="8" />
+
+        <Button android:text="2" />
+
+        <Button android:text="33" />
+
+        <Button />
+
+        <Button />
+
+        <Button />
+
+        <Button />
+
+        <Button android:layout_rowSpan="2" />
+
+        <Button />
+
+        <Button android:layout_columnSpan="2" />
+
+        <Button />
+
+        <Button />
+
+        <Button />
 
 
-</FrameLayout>
+    </GridLayout>
+
+    <Button />
+
+    <Button />
+
+    <Button />
+
+    <Button />
+
+    <Button />
+
+    <Button />
+
+    <Button />
+
+    <Button />
+
+    <Button />
+
+    <Button />
+
+
+</LinearLayout>
