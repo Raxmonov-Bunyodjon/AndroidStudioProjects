@@ -11,4 +11,5 @@
     <color name="my_color">#000</color>
     <color name="my_color2">#6200EA</color>
     <color name="white_color">#FFFFFF</color>
+    <color name="red">#D70000</color>
 </resources>

@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:background="@color/black">
+
+    <AbsoluteLayout
+        android:layout_width="360dp"
+        android:layout_height="60dp"
+        android:layout_x="30dp"
+        android:layout_y="50dp"
+        android:background="@color/red">
+
+        <AbsoluteLayout
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:layout_y="5dp"
+            android:layout_x="5dp"
+            android:background="@color/white">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/android_absolutelayout"
+                android:textStyle="bold"
+                android:textSize="31sp"
+                android:layout_x="6dp"
+                android:textColor="@color/red"
+                android:layout_y="5dp"
+                android:fontFamily="@font/times_new_roman_bold2">
+            </TextView>
+        </AbsoluteLayout>
+    </AbsoluteLayout>
+
+    <AbsoluteLayout
+        android:layout_width="320dp"
+        android:layout_height="530dp"
+        android:layout_x="55dp"
+        android:layout_y="140dp"
+        android:background="@color/red">
+        <AbsoluteLayout
+            android:layout_width="310dp"
+            android:layout_height="519dp"
+            android:layout_x="5dp"
+            android:layout_y="5dp"
+            android:background="@color/white">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/_20_40"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:layout_x="5dp"
+                android:layout_y="50dp"
+                android:fontFamily="@font/times_new_roman_bold2">
+            </TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/_60_150"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:layout_x="124dp"
+                android:layout_y="190dp"
+                android:fontFamily="@font/times_new_roman_bold2">
+            </TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/_20_200"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:layout_x="5dp"
+                android:layout_y="340dp"
+                android:fontFamily="@font/times_new_roman_bold2">
+            </TextView>
+        </AbsoluteLayout>
+
+        <AbsoluteLayout
+            android:layout_width="120dp"
+            android:layout_height="65dp"
+            android:layout_y="80dp"
+            android:layout_x="30dp"
+            android:background="#4A9D95">
+
+            <AbsoluteLayout
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_x="0dp"
+                android:layout_y="0dp"
+                android:background="@color/black">
+            </AbsoluteLayout>
+
+            <AbsoluteLayout
+                android:layout_width="105dp"
+                android:layout_height="50dp"
+                android:layout_y="7dp"
+                android:layout_x="7dp"
+                android:background="#FFEB3B">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/button_2"
+                    android:textStyle="bold"
+                    android:textColor="@color/red"
+                    android:textSize="24sp"
+                    android:layout_x="5dp"
+                    android:layout_y="8dp"
+                    android:fontFamily="@font/times_new_roman_bold2">
+                </TextView>
+            </AbsoluteLayout>
+        </AbsoluteLayout>
+
+
+        <AbsoluteLayout
+            android:layout_width="130dp"
+            android:layout_height="65dp"
+            android:layout_y="220dp"
+            android:layout_x="155dp"
+            android:background="#53A8A0">
+
+            <AbsoluteLayout
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_x="0dp"
+                android:layout_y="0dp"
+                android:background="@color/black">
+            </AbsoluteLayout>
+
+            <AbsoluteLayout
+                android:layout_width="115dp"
+                android:layout_height="50dp"
+                android:layout_y="7dp"
+                android:layout_x="7dp"
+                android:background="#FFEB3B">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/button_1"
+                    android:textStyle="bold"
+                    android:textSize="24sp"
+                    android:textColor="@color/red"
+                    android:layout_x="10dp"
+                    android:layout_y="8dp"
+                    android:fontFamily="@font/times_new_roman_bold2">
+                </TextView>
+            </AbsoluteLayout>
+        </AbsoluteLayout>
+
+        <AbsoluteLayout
+            android:layout_width="120dp"
+            android:layout_height="65dp"
+            android:layout_y="370dp"
+            android:layout_x="30dp"
+            android:background="#4D9E97">
+
+            <AbsoluteLayout
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_x="0dp"
+                android:layout_y="0dp"
+                android:background="@color/black">
+            </AbsoluteLayout>
+
+            <AbsoluteLayout
+                android:layout_width="105dp"
+                android:layout_height="50dp"
+                android:layout_y="7dp"
+                android:layout_x="7dp"
+                android:background="#FFEB3B">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/button_3"
+                    android:textStyle="bold"
+                    android:textColor="@color/red"
+                    android:textSize="24sp"
+                    android:layout_x="5dp"
+                    android:layout_y="8dp"
+                    android:fontFamily="@font/times_new_roman_bold2">
+                </TextView>
+            </AbsoluteLayout>
+        </AbsoluteLayout>
+    </AbsoluteLayout>
+</AbsoluteLayout>

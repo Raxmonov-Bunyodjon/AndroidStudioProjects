@@ -1,7 +1,19 @@
 <resources>
     <string name="app_name">Android Base Lesson3</string>
     <string name="icc_ranking_od_players">ICC Ranking of Players:</string>
+    <string name="center">Center</string>
+    <string name="left">Left</string>
+    <string name="right">Right</string>
+    <string name="middle">Middle</string>
+    <string name="bottom_of_screen">Bottom of Screen</string>
+    <string name="top">Top</string>
+    <string name="android_absolutelayout">Android AbsoluteLayout</string>
+    <string name="button_3">Button 3</string>
+    <string name="button_2">Button 2</string>
+    <string name="button_1">Button 1</string>
+    <string name="_60_150">(60,150)</string>
+    <string name="_20_40">(20,40)</string>
+    <string name="_20_200">(20,200)</string>
 
-    s
 
 </resources>
