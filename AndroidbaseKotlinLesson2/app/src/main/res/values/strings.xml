@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">Android base Kotlin Lesson2</string>
     <string name="_1">1</string>
+    <string name="text">Bunyod</string>
 </resources>
