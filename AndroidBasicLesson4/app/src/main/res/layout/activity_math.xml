@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#17FF94"
+    tools:context=".MathActivity">
+
+    <TextView
+        android:id="@+id/number1"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center_horizontal|top"
+        android:layout_marginTop="70dp"
+        android:paddingTop="0dp"
+        android:textColor="#FF0000"
+        android:background="@drawable/rounded_text"
+        android:text="25"
+        android:textSize="70sp" />
+
+    <TextView
+        android:id="@+id/amal"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:gravity="center"
+        android:layout_gravity="center_horizontal|center"
+        android:layout_marginBottom="145dp"
+        android:text="+"
+        android:background="@drawable/rounded_text"
+        android:paddingTop="0dp"
+        android:textColor="#FF0000"
+        android:textSize="70sp" />
+
+    <TextView
+        android:id="@+id/number2"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center_horizontal|center"
+        android:layout_marginBottom="45dp"
+        android:background="@drawable/rounded_text"
+        android:textColor="#FF0000"
+        android:gravity="center"
+        android:padding="0dp"
+        android:text="25"
+        android:textSize="70sp" />
+
+    <TextView
+        android:id="@+id/tenglik"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center_horizontal|center"
+        android:layout_marginTop="55dp"
+        android:gravity="center"
+        android:paddingTop="0dp"
+        android:textColor="#FF0000"
+        android:background="@drawable/rounded_text"
+        android:text="="
+        android:textSize="70sp"/>
+
+    <TextView
+        android:id="@+id/imkoniyatlar"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="30dp"
+        android:layout_marginLeft="130dp"
+        android:layout_marginTop="10dp"
+        android:text="Umumiy:"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/imkoniyatlar_qoldiq"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="30dp"
+        android:layout_marginLeft="280dp"
+        android:layout_marginTop="10dp"
+        android:text="Qoldiq:"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/togri_javob"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="To‘g‘ri javob: 0"
+        android:textSize="20sp"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginBottom="70dp"/>
+
+    <EditText
+        android:id="@+id/edit"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_gravity="center_horizontal|center"
+        android:layout_marginTop="150dp"
+        android:inputType="numberDecimal"/>
+
+    <Button
+        android:id="@+id/next_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|bottom"
+        android:layout_marginVertical="110dp"
+        android:text="Next" />
+
+    <FrameLayout
+        android:layout_width="30dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="22dp" />
+
+</FrameLayout>
