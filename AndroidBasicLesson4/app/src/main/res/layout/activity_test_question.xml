@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#63CEFF"
+    android:padding="16dp"
+    tools:context=".TestQuestionActivity">
+
+    <!-- Savol matni -->
+    <TextView
+        android:id="@+id/question_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Savol bu yerda chiqadi"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:padding="8dp"
+        android:gravity="center" />
+
+    <!-- Variantlar -->
+    <RadioGroup
+        android:id="@+id/radio_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="12dp">
+
+        <RadioButton
+            android:id="@+id/option_a"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="A)"
+            android:padding="8dp" />
+
+        <RadioButton
+            android:id="@+id/option_b"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="B)"
+            android:padding="8dp" />
+
+        <RadioButton
+            android:id="@+id/option_c"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="C)"
+            android:padding="8dp" />
+
+        <RadioButton
+            android:id="@+id/option_d"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="D)"
+            android:padding="8dp" />
+
+    </RadioGroup>
+
+    <!-- Ball -->
+    <TextView
+        android:id="@+id/score_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ball: 0"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:paddingTop="16dp" />
+
+    <!-- Keyingi tugma -->
+    <Button
+        android:id="@+id/next_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Keyingi savol"
+        android:layout_marginTop="20dp" />
+
+</LinearLayout>
