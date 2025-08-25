@@ -1,0 +1,10 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="Theme.AndroidBasicLesson6" parent="Theme.AppCompat.Light.NoActionBar">
+
+        <item name="colorPrimary">@color/purple_200</item>
+        <item name="colorPrimaryVariant">#FFFFFF</item>
+        <item name="colorOnPrimary">@android:color/white</item>
+        <item name="colorSecondary">@color/teal_200</item>
+    </style>
+</resources>

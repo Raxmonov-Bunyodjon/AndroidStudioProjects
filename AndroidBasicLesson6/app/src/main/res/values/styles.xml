@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="MyToolbarPopupTheme" parent="ThemeOverlay.AppCompat.Light">
+        <item name="colorControlNormal">#FFEB3B</item> <!-- sariq rang -->
+    </style>
+
+    <style name="Button_style">
+        <item name="android:textSize">25sp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+
+</resources>
