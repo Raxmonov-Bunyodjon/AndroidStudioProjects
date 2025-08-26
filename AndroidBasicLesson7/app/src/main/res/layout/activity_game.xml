@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="30dp"
+    android:background="#FF4E6E"
+    android:orientation="vertical"
+    tools:context=".GameActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="4"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="2dp">
+
+            <TextView
+                android:layout_width="347dp"
+                android:layout_height="match_parent"
+                android:layout_marginVertical="5dp"
+                android:layout_marginStart="30sp"
+                android:text="MEMORY GAME"
+                android:textSize="45sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="10dp">
+
+            <LinearLayout
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="30dp">
+
+                <TextView
+                    android:id="@+id/time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="45dp"
+                    android:text="Time"
+                    android:textSize="30sp" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="30dp">
+
+                <TextView
+                    android:id="@+id/score"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="40dp"
+                    android:text="score"
+                    android:textSize="30sp" />
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/card1"
+                style="@style/Button_style"
+                android:src="@drawable/yellow"
+                android:background="@drawable/rounded_image"
+                android:scaleType="centerCrop"
+                android:clipToOutline="true"
+                android:clickable="true"
+                android:focusable="true"/>
+
+            <ImageView
+                android:id="@+id/card2"
+                style="@style/Button_style"
+                android:src="@drawable/yellow"
+                android:background="@drawable/rounded_image"
+                android:scaleType="centerCrop"
+                android:clipToOutline="true"
+                android:clickable="true"
+                android:focusable="true"/>
+
+            <ImageView
+                android:id="@+id/card3"
+                style="@style/Button_style"
+                android:src="@drawable/yellow"
+                android:background="@drawable/rounded_image"
+                android:scaleType="centerCrop"
+                android:clipToOutline="true"
+                android:clickable="true"
+                android:focusable="true"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/card4"
+                style="@style/Button_style"
+                android:src="@drawable/yellow"
+                android:background="@drawable/rounded_image"
+                android:scaleType="centerCrop"
+                android:clipToOutline="true"
+                android:clickable="true"
+                android:focusable="true"/>
+
+            <ImageView
+                android:id="@+id/card5"
+                style="@style/Button_style"
+                android:src="@drawable/yellow"
+                android:background="@drawable/rounded_image"
+                android:scaleType="centerCrop"
+                android:clipToOutline="true"
+                android:clickable="true"
+                android:focusable="true"/>
+
+            <ImageView
+                android:id="@+id/card6"
+                style="@style/Button_style"
+                android:src="@drawable/yellow"
+                android:background="@drawable/rounded_image"
+                android:scaleType="centerCrop"
+                android:clipToOutline="true"
+                android:clickable="true"
+                android:focusable="true"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/card7"
+                style="@style/Button_style"
+                android:src="@drawable/yellow"
+                android:background="@drawable/rounded_image"
+                android:scaleType="centerCrop"
+                android:clipToOutline="true"
+                android:clickable="true"
+                android:focusable="true"/>
+
+            <ImageView
+                android:id="@+id/card8"
+                style="@style/Button_style"
+                android:src="@drawable/yellow"
+                android:background="@drawable/rounded_image"
+                android:scaleType="centerCrop"
+                android:clipToOutline="true"
+                android:clickable="true"
+                android:focusable="true"/>
+
+            <ImageView
+                android:id="@+id/card9"
+                style="@style/Button_style"
+                android:src="@drawable/yellow"
+                android:background="@drawable/rounded_image"
+                android:scaleType="centerCrop"
+                android:clipToOutline="true"
+                android:clickable="true"
+                android:focusable="true"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/card10"
+                style="@style/Button_style"
+                android:src="@drawable/yellow"
+                android:background="@drawable/rounded_image"
+                android:scaleType="centerCrop"
+                android:clipToOutline="true"
+                android:clickable="true"
+                android:focusable="true"/>
+
+            <ImageView
+                android:id="@+id/card11"
+                style="@style/Button_style"
+                android:src="@drawable/yellow"
+                android:background="@drawable/rounded_image"
+                android:scaleType="centerCrop"
+                android:clipToOutline="true"
+                android:clickable="true"
+                android:focusable="true"/>
+
+            <ImageView
+                android:id="@+id/card12"
+                style="@style/Button_style"
+                android:src="@drawable/yellow"
+                android:background="@drawable/rounded_image"
+                android:scaleType="centerCrop"
+                android:clipToOutline="true"
+                android:clickable="true"
+                android:focusable="true"/>
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
+
+
