@@ -23,10 +23,19 @@
             android:textSize="35sp" />
     </LinearLayout>
 
-   <ListView
-       android:id="@+id/listViewContacts"
-       android:layout_width="match_parent"
-       android:layout_height="match_parent"/>
+    <ListView
+        android:id="@+id/listViewContacts"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginStart="30dp"
+        android:layout_weight="1"/>
+
+    <Button
+        android:id="@+id/btnClear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hammasini o‘chirish"
+        android:layout_margin="15dp"/>
 
 
 </LinearLayout>

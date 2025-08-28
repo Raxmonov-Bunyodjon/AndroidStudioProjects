@@ -17,7 +17,7 @@ object ContactDataStore {
         context.dataStore.edit { prefs ->
             val oldData = prefs[CONTACT_LIST] ?: emptySet()
             val newData = oldData.toMutableSet()
-            newData.add("$name - $phone")
+            newData.add("$name\n$phone")
             prefs[CONTACT_LIST] = newData
         }
     }
@@ -27,4 +27,10 @@ object ContactDataStore {
             prefs[CONTACT_LIST] ?: emptySet()
         }
     }
+
+    suspend fun clearContacts(context: Context) {
+        context.dataStore.edit { prefs ->
+            prefs.remove(CONTACT_LIST)
+        }
+}
 }

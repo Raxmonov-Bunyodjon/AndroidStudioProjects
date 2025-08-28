@@ -1,7 +1,9 @@
 package uz.bbb.addandsavecontact
 
 import android.os.Bundle
+import android.util.Log
 import android.widget.ArrayAdapter
+import android.widget.Button
 import android.widget.ListView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
@@ -24,12 +26,21 @@ class ContactListActivity : AppCompatActivity() {
 
         val listView = findViewById<ListView>(R.id.listViewContacts)
 
+        val btnClear = findViewById<Button>(R.id.btnClear)
+        btnClear.setOnClickListener {
+            lifecycleScope.launch {
+                ContactDataStore.clearContacts(this@ContactListActivity)
+            }
+        }
+
         // DataStore dan o‘qish
         lifecycleScope.launch {
             ContactDataStore.getContacts(this@ContactListActivity).collectLatest { contacts ->
+                Log.d("CONTACT_LIST", "Keldi: $contacts")
                 val adapter = ArrayAdapter(
                     this@ContactListActivity,
-                    android.R.layout.simple_list_item_1,
+                    R.layout.list_item_contact,   // custom layout
+                    R.id.txtContact,              // xml ichidagi textview id
                     contacts.toList()
                 )
                 listView.adapter = adapter
@@ -37,3 +48,4 @@ class ContactListActivity : AppCompatActivity() {
         }
     }
 }
+
