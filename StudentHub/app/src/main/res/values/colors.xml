@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Default colors -->
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!-- Button gradient colors -->
+    <color name="purple_500">#9C27B0</color>   <!-- Dark purple -->
+    <color name="teal_200">#03DAC5</color>     <!-- Teal (green-blue) -->
+
+    <!-- Primary app theme colors -->
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+
+    <!-- Additional custom colors -->
+    <color name="red">#FF0000</color>
+    <color name="teal_700">#018786</color>
+
+</resources>
