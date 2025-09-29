@@ -63,9 +63,19 @@ Fragments and their actions:
             app:destination="@+id/addFacultyFragment"/>
     </fragment>
 
-    <!-- 🔹 Add Faculty Fragment -->
-<!--    <fragment-->
-<!--        android:id="@+id/addFacultyFragment"-->
-<!--        android:name=""-->
+<!--     🔹 Add Faculty Fragment -->
+    <fragment
+        android:id="@+id/addFacultyFragment"
+        android:name="com.example.studenthub.ui.main.faculty.addfaculty.AddFacultyFragment"
+        android:label="Add Faculty"
+        tools:layout="@layout/fragment_add_faculty"/>
+
+    <!-- 🔹 Add Student Fragment -->
+    <fragment
+        android:id="@+id/addStudentFragment"
+        android:name="com.example.studenthub.ui.main.student.addstudent.AddStudentFragment"
+        android:label="Add Student"
+        tools:layout="@layout/fragment_add_student"/>
+
 
 </navigation>

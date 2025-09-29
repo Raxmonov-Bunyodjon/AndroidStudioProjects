@@ -1,60 +1,117 @@
 package com.example.universityapp.ui.main.faculty
 
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.fragment.app.Fragment
+import androidx.fragment.app.viewModels
+import androidx.lifecycle.lifecycleScope
+import androidx.navigation.findNavController
+import androidx.navigation.fragment.findNavController
+import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.universityapp.R
-
-// TODO: Rename parameter arguments, choose names that match
-// the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-private const val ARG_PARAM1 = "param1"
-private const val ARG_PARAM2 = "param2"
+import com.example.universityapp.databinding.FragmentFacultyBinding
+import com.google.android.material.snackbar.Snackbar
+import dagger.hilt.android.AndroidEntryPoint
+import kotlinx.coroutines.flow.collectLatest
+import kotlinx.coroutines.launch
 
 /**
- * A simple [Fragment] subclass.
- * Use the [FacultyFragment.newInstance] factory method to
- * create an instance of this fragment.
+ * 🔹 FacultyFragment
+ *   - Fakultetlar ro‘yxatini ko‘rsatadi
+ *   - Qo‘shish, edit, delete funksiyalarini boshqaradi
+ *   - SearchView bilan qidiruvni qo‘llab-quvvatlaydi
  */
+@AndroidEntryPoint
 class FacultyFragment : Fragment() {
-    // TODO: Rename and change types of parameters
-    private var param1: String? = null
-    private var param2: String? = null
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        arguments?.let {
-            param1 = it.getString(ARG_PARAM1)
-            param2 = it.getString(ARG_PARAM2)
+    private var _binding: FragmentFacultyBinding? = null
+    private val binding get() = _binding!!
+
+    private val viewModel: FacultyViewModel by viewModels()
+    private lateinit var adapter: FacultyAdapter
+
+    /**
+     * 🔹 Layoutni inflate qilish va binding o‘rnatish
+     */
+    override fun onCreateView(
+        inflater: LayoutInflater,
+        container: ViewGroup?,
+        savedInstanceState: Bundle?
+    ): View {
+        _binding = FragmentFacultyBinding.inflate(inflater, container, false)
+        return binding.root
+    }
+
+    /**
+     * 🔹 UI elementlarni sozlash va listenerlar o‘rnatish
+     */
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+
+        // 🔹 Adapter yaratish va callbacklarni bog‘lash
+        adapter = FacultyAdapter(
+            onItemClick = { faculty ->
+                Snackbar.make(binding.root, "${faculty.name} tanlandi", Snackbar.LENGTH_SHORT)
+                    .show()
+            },
+            onEditClick = { faculty ->
+                // shu yerda o`zgarish qildim
+                val parentNav = requireActivity().findNavController(R.id.nav_host_fragment)
+                val bundle = Bundle().apply {
+                    putLong("facultyId", faculty.id) // edit qilish uchun ID uzatish
+                }
+                // buni ham
+                parentNav.navigate(R.id.addFacultyFragment, bundle)
+            },
+            onDeleteClick = { faculty ->
+                viewModel.deleteFaculty(faculty.id) // delete ViewModel orqali
+                Snackbar.make(binding.root, "${faculty.name} o'chirildi", Snackbar.LENGTH_SHORT)
+                    .show()
+            }
+        )
+
+        // 🔹 RecyclerView sozlash
+        binding.recyclerViewFaculty.layoutManager = LinearLayoutManager(requireContext())
+        binding.recyclerViewFaculty.adapter = adapter
+
+        // 🔹 FAB orqali yangi fakultet qo‘shish
+        binding.fabAddFaculty.setOnClickListener {
+            val parentNav = requireActivity().findNavController(R.id.nav_host_fragment)
+            val bundle = Bundle().apply {
+                putLong("facultyId", -1L) // yangi qo‘shish uchun maxsus qiymat
+            }
+            parentNav.navigate(R.id.addFacultyFragment, bundle)
+        }
+
+        // 🔹 SearchView bilan qidiruv listener
+        binding.searchView.setOnQueryTextListener(object :
+            androidx.appcompat.widget.SearchView.OnQueryTextListener {
+            override fun onQueryTextSubmit(query: String?): Boolean {
+                query?.let { viewModel.searchFaculties(it) } // submit qilinganda qidirish
+                return true
+            }
+
+            override fun onQueryTextChange(newText: String?): Boolean {
+                newText?.let { viewModel.searchFaculties(it) } // yozish davomida qidirish
+                return true
+            }
+        })
+
+        // 🔹 Facultetlar listini observe qilish va adapterga yuborish
+        viewLifecycleOwner.lifecycleScope.launch {
+            viewModel.faculties.collectLatest { list ->
+                adapter.submitList(list)
+            }
         }
     }
 
-    override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?,
-        savedInstanceState: Bundle?
-    ): View? {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_faculty, container, false)
-    }
-
-    companion object {
-        /**
-         * Use this factory method to create a new instance of
-         * this fragment using the provided parameters.
-         *
-         * @param param1 Parameter 1.
-         * @param param2 Parameter 2.
-         * @return A new instance of fragment FacultyFragment.
-         */
-        // TODO: Rename and change types and number of parameters
-        @JvmStatic
-        fun newInstance(param1: String, param2: String) =
-            FacultyFragment().apply {
-                arguments = Bundle().apply {
-                    putString(ARG_PARAM1, param1)
-                    putString(ARG_PARAM2, param2)
-                }
-            }
+    /**
+     * 🔹 Bindingni tozalash
+     */
+    override fun onDestroyView() {
+        super.onDestroyView()
+        _binding = null
     }
 }

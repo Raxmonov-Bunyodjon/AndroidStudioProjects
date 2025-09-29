@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:id="@+id/main"
     android:gravity="center"
     android:orientation="vertical">
 
@@ -13,11 +13,11 @@
 
         <TextView
             android:layout_width="0dp"
+            android:layout_height="30dp"
             android:layout_marginStart="30dp"
             android:layout_marginTop="16dp"
-            android:text="Phones"
-            android:layout_height="30dp"
             android:layout_weight="4"
+            android:text="Phones"
             android:textSize="20sp" />
 
     </LinearLayout>
@@ -27,10 +27,10 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
-        android:numColumns="2"
+        android:gravity="center"
         android:horizontalSpacing="30dp"
-        android:verticalSpacing="30dp"
+        android:numColumns="2"
         android:padding="30dp"
         android:stretchMode="columnWidth"
-        android:gravity="center" />
+        android:verticalSpacing="30dp" />
 </LinearLayout>

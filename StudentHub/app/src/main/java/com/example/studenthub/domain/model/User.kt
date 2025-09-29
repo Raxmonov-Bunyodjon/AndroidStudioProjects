@@ -17,4 +17,7 @@ data class User(
     val lastName: String,
     val username: String,
     val password: String,
+    val faculty: String? = null,
+    val direction: String? = null,
+    val avatar: String? = null
 )

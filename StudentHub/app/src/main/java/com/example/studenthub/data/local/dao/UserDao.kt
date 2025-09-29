@@ -36,8 +36,8 @@ interface UserDao {
     fun getAllUsers(): Flow<List<UserEntity>>
 
     /** Update user's avatar by username. */
-//    @Query("UPDATE users SET avatar = :avatar WHERE username = :username")
-//    suspend fun updateAvatar(username: String, avatar: String)
+    @Query("UPDATE users SET avatar = :avatar WHERE username = :username")
+    suspend fun updateAvatar(username: String, avatar: String)
 }
 
 

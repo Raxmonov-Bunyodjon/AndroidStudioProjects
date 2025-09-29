@@ -24,5 +24,22 @@ data class UserEntity(
 
     /** User's password. */
     val password: String,
+
+    /**
+     * faculty — the user's faculty (nullable).
+     */
+    val faculty: String? = null,
+
+    /**
+     * direction — the user's study direction (nullable).
+     */
+    val direction: String? = null,
+
+
+    /**
+     * avatar — the user's profile picture (URL or file path).
+     * Nullable → if no picture is provided, it will be null.
+     */
+    val avatar: String? = null
 )
 

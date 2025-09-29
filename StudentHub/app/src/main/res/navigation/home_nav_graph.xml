@@ -28,6 +28,17 @@ StartDestination:
         tools:layout="@layout/fragment_faculty"
         android:label="Fakultetlar"/>
 
+    <!-- 🔹 Student fragment -->
+    <fragment
+        android:id="@+id/studentFragmet"
+        android:name="com.example.studenthub.ui.main.student.StudentFragment"
+        tools:layout="@layout/fragment_student"
+        android:label="Students"/>
 
-
+    <!-- 🔹 Profile fragment -->
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.example.studenthub.ui.main.profile.ProfileFragment"
+        tools:layout="@layout/fragment_profile"
+        android:label="Profile"/>
 </navigation>

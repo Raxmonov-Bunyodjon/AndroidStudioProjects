@@ -9,6 +9,7 @@ import androidx.fragment.app.viewModels
 import androidx.navigation.NavOptions
 import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.fragment.findNavController
+import androidx.navigation.ui.setupWithNavController
 import com.example.studenthub.R
 import com.example.studenthub.databinding.FragmentHomeBinding
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
@@ -46,9 +47,9 @@ class HomeFragment: Fragment(){
         super.onViewCreated(view, savedInstanceState)
 
 //        // Show logout confirmation dialog when logout button is clicked
-//        binding.logout.setOnClickListener {
-//            showLogoutDialog()
-//        }
+        binding.logout.setOnClickListener {
+            showLogoutDialog()
+        }
 
         // Nested navigation (nav host fragment inside Home)
         val navHostFragment = childFragmentManager
@@ -57,7 +58,7 @@ class HomeFragment: Fragment(){
         val navController = navHostFragment.navController
 
 //        // Connect BottomNavigationView with navController
-//        binding.bottomNavigation.setupWithNavController(navConroller)
+        binding.bottomNavigation.setupWithNavController(navController)
     }
 
     /**

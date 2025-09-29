@@ -1,4 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
+    <item android:id = "@+id/first"
+        android:icon="@drawable/outline_format_list_bulleted_add_24"
+        android:title = "First"/>
+
+    <item android:id = "@+id/second"
+        android:icon="@drawable/outline_group_search_24"
+        android:title = "Second"/>
+
+    <item android:id = "@+id/third"
+        android:icon="@drawable/outline_contacts_product_24"
+        android:title = "Third" />
+
+    <item android:id = "@+id/four"
+        android:icon="@drawable/outline_info_24"
+        android:title = "Four"/>
+
+    <item android:id = "@+id/five"
+        android:icon="@drawable/outline_3p_24"
+        android:title = "Five"/>
+
 </menu>

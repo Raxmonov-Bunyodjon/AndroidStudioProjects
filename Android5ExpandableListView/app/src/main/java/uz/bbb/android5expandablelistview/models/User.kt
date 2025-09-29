@@ -1,4 +1,3 @@
 package uz.bbb.android5expandablelistview.models
 
-class User {
-}
+data class User(var img:Int, var name:String)

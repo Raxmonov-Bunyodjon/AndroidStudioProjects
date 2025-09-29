@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AndroidLayouts">
+    <shared>
+      <config />
+    </shared>
+  </component>
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="NONE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="347f9512-5136-4bd3-b413-e1eb077f0384" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../AddAndSaveContact/app/src/main/res/layout/list_item_contact.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AddAndSaveContact/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../AddAndSaveContact/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AddAndSaveContact/app/src/main/java/uz/bbb/addandsavecontact/ContactDataStore.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../AddAndSaveContact/app/src/main/java/uz/bbb/addandsavecontact/ContactDataStore.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AddAndSaveContact/app/src/main/java/uz/bbb/addandsavecontact/ContactListActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../AddAndSaveContact/app/src/main/java/uz/bbb/addandsavecontact/ContactListActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AddAndSaveContact/app/src/main/res/layout/activity_contact_list.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../AddAndSaveContact/app/src/main/res/layout/activity_contact_list.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AndroidBaseLesson3/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AndroidBaseLesson3/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AndroidBaseLesson3/.idea/.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AndroidBaseLesson3/.idea/AndroidProjectSystem.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AndroidBaseLesson3/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AndroidBaseLesson3/.idea/deploymentTargetSelector.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AndroidBaseLesson3/.idea/deviceManager.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AndroidBaseLesson3/.idea/gradle.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AndroidBaseLesson3/.idea/migrations.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AndroidBaseLesson3/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AndroidBaseLesson3/.idea/runConfigurations.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AndroidBaseLesson3/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AndroidBaseLesson3/.kotlin/errors/errors-1755706417486.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AndroidBaseLesson3/.kotlin/errors/errors-1755719881283.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AndroidBaseLesson3/.kotlin/errors/errors-1755772564134.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AndroidBaseLesson3/.kotlin/errors/errors-1755791437667.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AndroidBaseLesson3/README_tasks1.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AndroidBaseLesson3/README_tasks2.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AndroidBaseLesson3/README_tasks3.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AndroidBaseLesson3/README_tasks4.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AndroidBaseLesson3/README_tasks5.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AndroidBaseLesson3/README_tasks6.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AndroidBaseLesson3/app/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AndroidBaseLesson3/app/build.gradle.kts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AndroidBaseLesson3/app/proguard-rules.pro" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AndroidBaseLesson3/app/src/androidTest/java/uz/bbb/androidbaselesson3/ExampleInstrumentedTest.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AndroidBaseLesson3/app/src/main/AndroidManifest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AndroidBaseLesson3/app/src/main/java/uz/bbb/androidbaselesson3/MainActivity.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AndroidBaseLesson3/app/src/main/res/drawable/button_bg.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AndroidBaseLesson3/app/src/main/res/drawable/button_rect.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AndroidBaseLesson3/app/src/main/res/drawable/ic_launcher_background.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AndroidBaseLesson3/app/src/main/res/drawable/ic_launcher_foreground.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AndroidBaseLesson3/app/src/main/res/drawable/image_border.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AndroidBaseLesson3/app/src/main/res/drawable/image_button_border.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AndroidBaseLesson3/app/src/main/res/drawable/linear_background.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AndroidBaseLesson3/app/src/main/res/font/times_new_roman_bold.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AndroidBaseLesson3/app/src/main/res/font/times_new_roman_bold2.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AndroidBaseLesson3/app/src/main/res/layout/aa.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AndroidBaseLesson3/app/src/main/res/layout/activity_main.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AndroidBaseLesson3/app/src/main/res/layout/activity_main_tasks1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AndroidBaseLesson3/app/src/main/res/layout/activity_main_tasks2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AndroidBaseLesson3/app/src/main/res/layout/activity_main_tasks3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AndroidBaseLesson3/app/src/main/res/layout/activity_main_tasks4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AndroidBaseLesson3/app/src/main/res/layout/activity_main_tasks5.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AndroidBaseLesson3/app/src/main/res/layout/activity_main_tasks6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AndroidBaseLesson3/app/src/main/res/layout/item_layout.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AndroidBaseLesson3/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AndroidBaseLesson3/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AndroidBaseLesson3/app/src/main/res/mipmap-hdpi/ic_launcher.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AndroidBaseLesson3/app/src/main/res/mipmap-hdpi/ic_launcher_round.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AndroidBaseLesson3/app/src/main/res/mipmap-mdpi/ic_launcher.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AndroidBaseLesson3/app/src/main/res/mipmap-mdpi/ic_launcher_round.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AndroidBaseLesson3/app/src/main/res/mipmap-xhdpi/ic_launcher.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AndroidBaseLesson3/app/src/main/res/mipmap-xhdpi/ic_launcher_round.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AndroidBaseLesson3/app/src/main/res/mipmap-xxhdpi/ic_launcher.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AndroidBaseLesson3/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AndroidBaseLesson3/app/src/main/res/mipmap-xxxhdpi/ic_launcher.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AndroidBaseLesson3/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AndroidBaseLesson3/app/src/main/res/values-night/themes.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AndroidBaseLesson3/app/src/main/res/values/colors.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AndroidBaseLesson3/app/src/main/res/values/strings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AndroidBaseLesson3/app/src/main/res/values/styles.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AndroidBaseLesson3/app/src/main/res/values/themes.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AndroidBaseLesson3/app/src/main/res/xml/backup_rules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AndroidBaseLesson3/app/src/main/res/xml/data_extraction_rules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AndroidBaseLesson3/app/src/test/java/uz/bbb/androidbaselesson3/ExampleUnitTest.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AndroidBaseLesson3/build.gradle.kts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AndroidBaseLesson3/gradle.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AndroidBaseLesson3/gradle/libs.versions.toml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AndroidBaseLesson3/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AndroidBaseLesson3/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AndroidBaseLesson3/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AndroidBaseLesson3/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AndroidBaseLesson3/settings.gradle.kts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AndroidBasicLesson6/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../AndroidBasicLesson6/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AndroidBasicLesson6/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../AndroidBasicLesson6/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AndroidBasicLesson7/.idea/deploymentTargetSelector.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../AndroidBasicLesson7/.idea/deploymentTargetSelector.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AndroidBasicLesson7/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../AndroidBasicLesson7/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AndroidBasicLesson8/app/src/main/res/layout/activity_third.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../AndroidBasicLesson8/app/src/main/res/layout/activity_third.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AndroidBasicLesson9/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../AndroidBasicLesson9/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AndroidBasicLesson9/app/src/main/java/uz/bbb/androidbasiclesson9/models/User.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../AndroidBasicLesson9/app/src/main/java/uz/bbb/androidbasiclesson9/models/User.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AndroidBasicLesson9/app/src/main/java/uz/bbb/androidbasiclesson9/ui/MainActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../AndroidBasicLesson9/app/src/main/java/uz/bbb/androidbasiclesson9/ui/MainActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AndroidBasicLesson9/app/src/main/java/uz/bbb/androidbasiclesson9/ui/SecondActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../AndroidBasicLesson9/app/src/main/java/uz/bbb/androidbasiclesson9/ui/SecondActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AndroidBasicLesson9/app/src/main/java/uz/bbb/androidbasiclesson9/ui/WelcomeActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../AndroidBasicLesson9/app/src/main/java/uz/bbb/androidbasiclesson9/ui/WelcomeActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AndroidBasicLesson9/app/src/main/java/uz/bbb/androidbasiclesson9/utils/MySharedPreference.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../AndroidBasicLesson9/app/src/main/java/uz/bbb/androidbasiclesson9/utils/MySharedPreference.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AndroidBasicLesson9/app/src/main/res/layout/activity_second.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../AndroidBasicLesson9/app/src/main/res/layout/activity_second.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AndroidBasicLesson9/app/src/main/res/layout/activity_welcome.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../AndroidBasicLesson9/app/src/main/res/layout/activity_welcome.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AndroidBesicLesson5/app/src/main/res/layout/tasks_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../AndroidBesicLesson5/app/src/main/res/layout/tasks_1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AndroidbaseKotlinLesson2/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AndroidbaseKotlinLesson2/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AndroidbaseKotlinLesson2/.idea/.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AndroidbaseKotlinLesson2/.idea/AndroidProjectSystem.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AndroidbaseKotlinLesson2/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AndroidbaseKotlinLesson2/.idea/deploymentTargetSelector.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AndroidbaseKotlinLesson2/.idea/deviceManager.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AndroidbaseKotlinLesson2/.idea/gradle.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AndroidbaseKotlinLesson2/.idea/migrations.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AndroidbaseKotlinLesson2/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AndroidbaseKotlinLesson2/.idea/runConfigurations.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AndroidbaseKotlinLesson2/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AndroidbaseKotlinLesson2/.kotlin/errors/errors-1755551511752.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AndroidbaseKotlinLesson2/.kotlin/errors/errors-1755577501271.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AndroidbaseKotlinLesson2/README_tasks1.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AndroidbaseKotlinLesson2/README_tasks2.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AndroidbaseKotlinLesson2/README_tasks3.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AndroidbaseKotlinLesson2/README_tasks4.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AndroidbaseKotlinLesson2/README_tasks5.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AndroidbaseKotlinLesson2/README_tasks6.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AndroidbaseKotlinLesson2/app/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AndroidbaseKotlinLesson2/app/build.gradle.kts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AndroidbaseKotlinLesson2/app/proguard-rules.pro" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AndroidbaseKotlinLesson2/app/src/androidTest/java/uz/bbb/androidbasekotlinlesson2/ExampleInstrumentedTest.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AndroidbaseKotlinLesson2/app/src/main/AndroidManifest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AndroidbaseKotlinLesson2/app/src/main/java/uz/bbb/androidbasekotlinlesson2/MainActivity.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AndroidbaseKotlinLesson2/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AndroidbaseKotlinLesson2/app/src/main/res/drawable/android_logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AndroidbaseKotlinLesson2/app/src/main/res/drawable/ic_launcher_background.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AndroidbaseKotlinLesson2/app/src/main/res/drawable/outline_airline_seat_flat_24.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AndroidbaseKotlinLesson2/app/src/main/res/drawable/outline_android_wifi_3_bar_24.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AndroidbaseKotlinLesson2/app/src/main/res/drawable/outline_battery_alert_24.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AndroidbaseKotlinLesson2/app/src/main/res/drawable/outline_bluetooth_24.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AndroidbaseKotlinLesson2/app/src/main/res/drawable/outline_desktop_windows_24.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AndroidbaseKotlinLesson2/app/src/main/res/drawable/outline_map_24.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AndroidbaseKotlinLesson2/app/src/main/res/drawable/outline_panorama_wide_angle_24.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AndroidbaseKotlinLesson2/app/src/main/res/drawable/outline_radio_24.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AndroidbaseKotlinLesson2/app/src/main/res/drawable/outline_send_24.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AndroidbaseKotlinLesson2/app/src/main/res/drawable/tasks2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AndroidbaseKotlinLesson2/app/src/main/res/drawable/windowswhite.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AndroidbaseKotlinLesson2/app/src/main/res/layout/activity_main_tasks1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AndroidbaseKotlinLesson2/app/src/main/res/layout/activity_main_tasks2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AndroidbaseKotlinLesson2/app/src/main/res/layout/activity_main_tasks3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AndroidbaseKotlinLesson2/app/src/main/res/layout/activity_main_tasks4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AndroidbaseKotlinLesson2/app/src/main/res/layout/activity_main_tasks5.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AndroidbaseKotlinLesson2/app/src/main/res/layout/activity_main_tasks6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AndroidbaseKotlinLesson2/app/src/main/res/layout/activity_main_tasks7.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AndroidbaseKotlinLesson2/app/src/main/res/layout/frame_layout.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AndroidbaseKotlinLesson2/app/src/main/res/layout/relative_layout.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AndroidbaseKotlinLesson2/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AndroidbaseKotlinLesson2/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AndroidbaseKotlinLesson2/app/src/main/res/mipmap-hdpi/ic_launcher.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AndroidbaseKotlinLesson2/app/src/main/res/mipmap-hdpi/ic_launcher_round.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AndroidbaseKotlinLesson2/app/src/main/res/mipmap-mdpi/ic_launcher.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AndroidbaseKotlinLesson2/app/src/main/res/mipmap-mdpi/ic_launcher_round.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AndroidbaseKotlinLesson2/app/src/main/res/mipmap-xhdpi/ic_launcher.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AndroidbaseKotlinLesson2/app/src/main/res/mipmap-xhdpi/ic_launcher_round.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AndroidbaseKotlinLesson2/app/src/main/res/mipmap-xxhdpi/ic_launcher.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AndroidbaseKotlinLesson2/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AndroidbaseKotlinLesson2/app/src/main/res/mipmap-xxxhdpi/ic_launcher.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AndroidbaseKotlinLesson2/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AndroidbaseKotlinLesson2/app/src/main/res/values-night/themes.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AndroidbaseKotlinLesson2/app/src/main/res/values/colors.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AndroidbaseKotlinLesson2/app/src/main/res/values/strings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AndroidbaseKotlinLesson2/app/src/main/res/values/themes.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AndroidbaseKotlinLesson2/app/src/main/res/xml/backup_rules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AndroidbaseKotlinLesson2/app/src/main/res/xml/data_extraction_rules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AndroidbaseKotlinLesson2/app/src/test/java/uz/bbb/androidbasekotlinlesson2/ExampleUnitTest.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AndroidbaseKotlinLesson2/build.gradle.kts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AndroidbaseKotlinLesson2/gradle.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AndroidbaseKotlinLesson2/gradle/libs.versions.toml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AndroidbaseKotlinLesson2/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AndroidbaseKotlinLesson2/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AndroidbaseKotlinLesson2/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AndroidbaseKotlinLesson2/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AndroidbaseKotlinLesson2/settings.gradle.kts" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[DeviceId(pluginId=LocalEmulator, isTemplate=false, identifier=path=/Users/bunyodjonraxmonov/.android/avd/Pixel_2.avd)]" />
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="Android(Basic Lesson 10" type="f1a62948:ProjectNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "Raxmonov-Bunyodjon"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/Raxmonov-Bunyodjon/AndroidStudioProjects.git",
+    "accountId": "6a38b14b-b48f-48a9-b161-e260414d3f17"
+  }
+}]]></component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 2
+}]]></component>
+  <component name="ProjectId" id="31u1u2UGvXdYwlqhF1R8CBNxveq" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.cidr.known.project.marker": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.readMode.enableVisualFormatting": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "cf.first.check.clang-format": "false",
+    "cidr.known.project.marker": "true",
+    "git-widget-placeholder": "main",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.17",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "project.propVCSSupport.Mappings"
+  }
+}]]></component>
+  <component name="RunManager">
+    <configuration name="app" type="AndroidRunConfigurationType" factoryName="Android App" activateToolWindowBeforeRun="false">
+      <module name="Android(Basic_Lesson_10.app" />
+      <option name="ANDROID_RUN_CONFIGURATION_SCHEMA_VERSION" value="1" />
+      <option name="DEPLOY" value="true" />
+      <option name="DEPLOY_APK_FROM_BUNDLE" value="false" />
+      <option name="DEPLOY_AS_INSTANT" value="false" />
+      <option name="ARTIFACT_NAME" value="" />
+      <option name="PM_INSTALL_OPTIONS" value="" />
+      <option name="ALL_USERS" value="false" />
+      <option name="ALWAYS_INSTALL_WITH_PM" value="false" />
+      <option name="ALLOW_ASSUME_VERIFIED" value="false" />
+      <option name="CLEAR_APP_STORAGE" value="false" />
+      <option name="DYNAMIC_FEATURES_DISABLED_LIST" value="" />
+      <option name="ACTIVITY_EXTRA_FLAGS" value="" />
+      <option name="MODE" value="default_activity" />
+      <option name="RESTORE_ENABLED" value="false" />
+      <option name="RESTORE_FILE" value="" />
+      <option name="RESTORE_FRESH_INSTALL_ONLY" value="false" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
+      <option name="TARGET_SELECTION_MODE" value="DEVICE_AND_SNAPSHOT_COMBO_BOX" />
+      <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="-1" />
+      <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
+      <option name="DEBUGGER_TYPE" value="Auto" />
+      <Auto>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+        <option name="ATTACH_ON_WAIT_FOR_DEBUGGER" value="false" />
+        <option name="DEBUG_SANDBOX_SDK" value="false" />
+      </Auto>
+      <Hybrid>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+        <option name="ATTACH_ON_WAIT_FOR_DEBUGGER" value="false" />
+        <option name="DEBUG_SANDBOX_SDK" value="false" />
+      </Hybrid>
+      <Java>
+        <option name="ATTACH_ON_WAIT_FOR_DEBUGGER" value="false" />
+        <option name="DEBUG_SANDBOX_SDK" value="false" />
+      </Java>
+      <Native>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+        <option name="ATTACH_ON_WAIT_FOR_DEBUGGER" value="false" />
+        <option name="DEBUG_SANDBOX_SDK" value="false" />
+      </Native>
+      <Profilers>
+        <option name="ADVANCED_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_CONFIGURATION_NAME" value="Java/Kotlin Method Sample (legacy)" />
+        <option name="STARTUP_NATIVE_MEMORY_PROFILING_ENABLED" value="false" />
+        <option name="NATIVE_MEMORY_SAMPLE_RATE_BYTES" value="2048" />
+      </Profilers>
+      <option name="DEEP_LINK" value="" />
+      <option name="ACTIVITY" value="" />
+      <option name="ACTIVITY_CLASS" value="" />
+      <option name="SEARCH_ACTIVITY_IN_GLOBAL_SCOPE" value="false" />
+      <option name="SKIP_ACTIVITY_VALIDATION" value="false" />
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="347f9512-5136-4bd3-b413-e1eb077f0384" name="Changes" comment="" />
+      <created>1756359363130</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1756359363130</updated>
+    </task>
+    <servers />
+  </component>
+</project>

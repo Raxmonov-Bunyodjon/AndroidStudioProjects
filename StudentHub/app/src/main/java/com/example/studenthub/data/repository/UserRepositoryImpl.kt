@@ -26,35 +26,20 @@ class UserRepositoryImpl @Inject constructor(
         get() = preferences.userUsernameFlow
 
     // ============================
-    // Signup: Check if a user exists by username
-    // Returns null if no user is found
+    // Get list of users
     // ============================
-    override suspend fun getUserByUsername(username: String): User? {
-        val entity = userDao.getUserByUsername(username).firstOrNull()
-        return entity?.let {
-            User(
-                id = it.id,
-                firstName = it.firstName,
-                lastName = it.lastName,
-                username = it.username,
-                password = it.password
-            )
+    override fun getUsers(): Flow<List<User>> {
+        return userDao.getAllUsers().map { list ->
+            list.map { entity ->
+                User(
+                    id = entity.id,
+                    firstName = entity.firstName,
+                    lastName = entity.lastName,
+                    username = entity.username,
+                    password = entity.password
+                )
+            }
         }
-    }
-
-    // ============================
-    // Insert a new user into the database
-    // ============================
-    override suspend fun insertUser(user: User) {
-        userDao.insertUser(
-            UserEntity(
-                id = user.id,
-                firstName = user.firstName,
-                lastName = user.lastName,
-                username = user.username,
-                password = user.password
-            )
-        )
     }
 
     // ============================
@@ -79,6 +64,56 @@ class UserRepositoryImpl @Inject constructor(
     }
 
     // ============================
+    // Signup: Check if a user exists by username
+    // Returns null if no user is found
+    // ============================
+    override suspend fun getUserByUsername(username: String): User? {
+        val entity = userDao.getUserByUsername(username).firstOrNull()
+        return entity?.let {
+            User(
+                id = it.id,
+                firstName = it.firstName,
+                lastName = it.lastName,
+                username = it.username,
+                password = it.password,
+                faculty = it.faculty,
+                direction = it.direction,
+                avatar = it.avatar
+
+            )
+        }
+    }
+
+    // ============================
+    // Insert a new user into the database
+    // ============================
+    override suspend fun insertUser(user: User) {
+        userDao.insertUser(
+            UserEntity(
+                id = user.id,
+                firstName = user.firstName,
+                lastName = user.lastName,
+                username = user.username,
+                password = user.password
+            )
+        )
+    }
+
+    // ============================
+    // Delete user
+    // ============================
+    override suspend fun deleteUser(user: User) {
+        userDao.deleteUser(user.id)
+    }
+
+    // ============================
+    // Update user avatar
+    // ============================
+    override suspend fun updateUserAvatar(username: String, avatar: String) {
+        userDao.updateAvatar(username, avatar)
+    }
+
+    // ============================
     // Save signed-in username into DataStore
     // ============================
     override suspend fun signInUser(username: String) {
@@ -92,5 +127,4 @@ class UserRepositoryImpl @Inject constructor(
     override suspend fun logout() {
         preferences.clearUser()
     }
-
 }

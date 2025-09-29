@@ -1,60 +1,82 @@
 package com.example.universityapp.ui.auth
 
-import android.os.Bundle
-import androidx.fragment.app.Fragment
-import android.view.LayoutInflater
-import android.view.View
-import android.view.ViewGroup
-import com.example.universityapp.R
-
-// TODO: Rename parameter arguments, choose names that match
-// the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-private const val ARG_PARAM1 = "param1"
-private const val ARG_PARAM2 = "param2"
+import androidx.lifecycle.ViewModel
+import androidx.lifecycle.viewModelScope
+import com.example.universityapp.domain.model.User
+import com.example.universityapp.domain.repository.UserRepository
+import dagger.hilt.android.lifecycle.HiltViewModel
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.flow.Flow
+import kotlinx.coroutines.flow.MutableStateFlow
+import kotlinx.coroutines.flow.StateFlow
+import kotlinx.coroutines.launch
+import javax.inject.Inject
 
 /**
- * A simple [Fragment] subclass.
- * Use the [AuthViewModel.newInstance] factory method to
- * create an instance of this fragment.
+ * AuthViewModel — foydalanuvchi autentifikatsiyasi uchun ViewModel.
+ * Login va Signup jarayonlarini boshqaradi, va UI uchun holatlarni StateFlow orqali beradi.
  */
-class AuthViewModel : Fragment() {
-    // TODO: Rename and change types of parameters
-    private var param1: String? = null
-    private var param2: String? = null
+@HiltViewModel
+class AuthViewModel @Inject constructor(
+    private val userRepository: UserRepository, // Repository orqali ma'lumotlar qatlamiga kirish
+) : ViewModel() {
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        arguments?.let {
-            param1 = it.getString(ARG_PARAM1)
-            param2 = it.getString(ARG_PARAM2)
+    // 🔹 MutableStateFlow orqali Auth holati saqlanadi va UI kuzatadi
+    private val _authState = MutableStateFlow<AuthState>(AuthState.Idle)
+    val authState: StateFlow<AuthState> = _authState
+
+    // 🔹 Hozirgi login qilgan foydalanuvchi username-ni kuzatish
+    val currentUserFlow: Flow<String?> = userRepository.userUsernameFlow
+
+    // ========================
+    // ✅ Login funksiyasi
+    // ========================
+    fun login(username: String, password: String) {
+        viewModelScope.launch(Dispatchers.IO) {
+            // Foydalanuvchini username va parol bilan olish
+            userRepository.getUserByUsernameAndPassword(username, password).collect { user ->
+                if (user == null) {
+                    // Agar foydalanuvchi topilmasa, xatolik holatini yuboradi
+                    _authState.emit(AuthState.Error("Username yoki parol noto‘g‘ri!"))
+                } else {
+                    // Foydalanuvchi topilgan holatda login saqlanadi va muvaffaqiyat holati yuboriladi
+                    userRepository.signInUser(username)
+                    _authState.emit(
+                        AuthState.Success("Xush kelibsiz ${user.firstName} ${user.lastName}")
+                    )
+                }
+            }
         }
     }
 
-    override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?,
-        savedInstanceState: Bundle?
-    ): View? {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_auth_view_model, container, false)
-    }
-
-    companion object {
-        /**
-         * Use this factory method to create a new instance of
-         * this fragment using the provided parameters.
-         *
-         * @param param1 Parameter 1.
-         * @param param2 Parameter 2.
-         * @return A new instance of fragment AuthViewModel.
-         */
-        // TODO: Rename and change types and number of parameters
-        @JvmStatic
-        fun newInstance(param1: String, param2: String) =
-            AuthViewModel().apply {
-                arguments = Bundle().apply {
-                    putString(ARG_PARAM1, param1)
-                    putString(ARG_PARAM2, param2)
-                }
+    // ========================
+    // ✅ Signup (Ro‘yxatdan o‘tish)
+    // ========================
+    fun signup(firstName: String, lastName: String, username: String, password: String) {
+        viewModelScope.launch(Dispatchers.IO) {
+            // Avval foydalanuvchi mavjudligini tekshiradi
+            val existingUser = userRepository.getUserByUsername(username)
+            if (existingUser != null) {
+                // Agar foydalanuvchi allaqachon mavjud bo‘lsa, xatolik holati
+                _authState.value = AuthState.Error("Foydalanuvchi allaqachon mavjud!")
+                return@launch
             }
+
+            // Yangi foydalanuvchi obyektini yaratish
+            val newUser = User(
+                id = 0, // Room DB auto-increment qiladi
+                firstName = firstName,
+                lastName = lastName,
+                username = username,
+                password = password
+            )
+
+            // DB ga qo‘shish va login saqlash
+            userRepository.insertUser(newUser)
+            userRepository.signInUser(username)
+
+            // Muvaffaqiyat holatini yuborish
+            _authState.value = AuthState.Success("Ro‘yxatdan o‘tish muvaffaqiyatli!")
+        }
     }
 }

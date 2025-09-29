@@ -1,10 +1,89 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ThirdActivity">
+    android:gravity="center"
+    tools:context=".Task2_2">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:columnCount="4">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button1"
+            android:layout_margin="5dp"
+            android:background="#FD000000"
+            android:tag="#FD000000" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button2"
+            android:layout_margin="5dp"
+            android:background="#F44336"
+            android:tag="#F44336" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button3"
+            android:layout_margin="5dp"
+            android:background="#9C27B0"
+            android:tag="#9C27B0" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button4"
+            android:layout_margin="5dp"
+            android:background="#673AB7"
+            android:tag="#673AB7" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button5"
+            android:layout_margin="5dp"
+            android:background="#CDDC39"
+            android:tag="#CDDC39" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button6"
+            android:layout_margin="5dp"
+            android:background="#2196F3"
+            android:tag="#2196F3" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button7"
+            android:layout_margin="5dp"
+            android:background="#4CAF50"
+            android:tag="#4CAF50" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button8"
+            android:layout_margin="5dp"
+            android:background="#FFEB3B"
+            android:tag="#FFEB3B" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button9"
+            android:layout_margin="5dp"
+            android:background="#00C853"
+            android:tag="#00C853" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button10"
+            android:layout_margin="5dp"
+            android:background="#18FFFF"
+            android:tag="#18FFFF" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button11"
+            android:layout_margin="5dp"
+            android:background="#F50057"
+            android:tag="#F50057" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button12"
+            android:layout_margin="5dp"
+            android:background="#D50000"
+            android:tag="#D50000" />
+
+    </GridLayout>
+
+</LinearLayout>

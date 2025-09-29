@@ -1,4 +1,8 @@
 package uz.bbb.listview.models
 
-class ImageData {
-}
+import java.io.Serializable
+
+data class ImageData (
+    var imgUrl: String,
+    val text: String
+): Serializable

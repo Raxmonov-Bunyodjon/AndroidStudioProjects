@@ -1,60 +1,123 @@
 package com.example.universityapp.ui.main.student
 
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.fragment.app.Fragment
+import androidx.fragment.app.viewModels
+import androidx.lifecycle.lifecycleScope
+import androidx.navigation.findNavController
+import androidx.navigation.fragment.findNavController
+import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.universityapp.R
-
-// TODO: Rename parameter arguments, choose names that match
-// the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-private const val ARG_PARAM1 = "param1"
-private const val ARG_PARAM2 = "param2"
+import com.example.universityapp.databinding.FragmentStudentBinding
+import com.example.universityapp.utils.showSnackbar
+import com.google.android.material.snackbar.Snackbar
+import dagger.hilt.android.AndroidEntryPoint
+import kotlinx.coroutines.launch
 
 /**
- * A simple [Fragment] subclass.
- * Use the [StudentFragment.newInstance] factory method to
- * create an instance of this fragment.
+ * 🔹 StudentFragment
+ *
+ * Talabalar ro‘yxatini ko‘rsatish, qidirish, qo‘shish, tahrirlash va o‘chirish imkoniyatlari bilan.
  */
+@AndroidEntryPoint
 class StudentFragment : Fragment() {
-    // TODO: Rename and change types of parameters
-    private var param1: String? = null
-    private var param2: String? = null
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        arguments?.let {
-            param1 = it.getString(ARG_PARAM1)
-            param2 = it.getString(ARG_PARAM2)
+    private var _binding: FragmentStudentBinding? = null
+    private val binding get() = _binding!!
+
+    // 🔹 ViewModel orqali talabalar ma'lumotlarini olish
+    private val viewModel: StudentViewModel by viewModels()
+
+    // 🔹 RecyclerView Adapter
+    private lateinit var adapter: StudentAdapter
+
+    /**
+     * 🔹 onCreateView
+     * Layoutni binding orqali inflate qiladi
+     */
+    override fun onCreateView(
+        inflater: LayoutInflater,
+        container: ViewGroup?,
+        savedInstanceState: Bundle?
+    ): View {
+        _binding = FragmentStudentBinding.inflate(inflater, container, false)
+        return binding.root
+    }
+
+    /**
+     * 🔹 onViewCreated
+     * RecyclerView, Adapter, FloatingActionButton va SearchView sozlamalari
+     */
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+
+        // 🔹 Adapter yaratish va listenerlarini o‘rnatish
+        adapter = StudentAdapter(
+            onClick = { student ->
+                // Item bosilganda snack bar bilan xabar chiqarish
+                binding.root.showSnackbar("${student.firstName} ${student.lastName} tanlandi")
+            },
+            onEditClick = { student ->
+                //bu joyini o`zgartirdim
+                val parentNav = requireActivity().findNavController(R.id.nav_host_fragment)
+                // Edit button bosilganda AddStudentFragmentga studentId bilan o'tish
+                val bundle = Bundle().apply {
+                    putLong("studentId", student.id)
+                }
+                //bu joyini o`zgartirdim
+                parentNav.navigate(R.id.addStudentFragment, bundle)
+            },
+            onDeleteClick = { student ->
+                // Delete button bosilganda ViewModel orqali o‘chirish va snackbar
+                viewModel.deleteStudent(student.id)
+                Snackbar.make(binding.root, "${student.firstName} o'chirildi", Snackbar.LENGTH_SHORT)
+                    .show()
+            }
+        )
+
+        // 🔹 RecyclerView sozlamalari
+        binding.recyclerView.layoutManager = LinearLayoutManager(requireContext())
+        binding.recyclerView.adapter = adapter
+
+        // 🔹 Yangi talaba qo‘shish FloatingActionButton
+        binding.fabAddStudent.setOnClickListener {
+            val parentNav = requireActivity().findNavController(R.id.nav_host_fragment)
+            val bundle = Bundle().apply {
+                putLong("facultyId", -1L) // yangi qo‘shish uchun ID -1
+            }
+            parentNav.navigate(R.id.addStudentFragment, bundle)
+        }
+
+        // 🔹 SearchView qidiruv listener
+        binding.searchView.setOnQueryTextListener(object : androidx.appcompat.widget.SearchView.OnQueryTextListener {
+            override fun onQueryTextSubmit(query: String?): Boolean {
+                query?.let { viewModel.searchStudents(it) }
+                return true
+            }
+
+            override fun onQueryTextChange(newText: String?): Boolean {
+                newText?.let { viewModel.searchStudents(it) }
+                return true
+            }
+        })
+
+        // 🔹 Talabalar ro‘yxatini observer bilan kuzatish va adapterga yuborish
+        viewLifecycleOwner.lifecycleScope.launch {
+            viewModel.students.collect { list ->
+                adapter.submitList(list)
+            }
         }
     }
 
-    override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?,
-        savedInstanceState: Bundle?
-    ): View? {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_student, container, false)
-    }
-
-    companion object {
-        /**
-         * Use this factory method to create a new instance of
-         * this fragment using the provided parameters.
-         *
-         * @param param1 Parameter 1.
-         * @param param2 Parameter 2.
-         * @return A new instance of fragment StudentFragment.
-         */
-        // TODO: Rename and change types and number of parameters
-        @JvmStatic
-        fun newInstance(param1: String, param2: String) =
-            StudentFragment().apply {
-                arguments = Bundle().apply {
-                    putString(ARG_PARAM1, param1)
-                    putString(ARG_PARAM2, param2)
-                }
-            }
+    /**
+     * 🔹 onDestroyView
+     * Bindingni null qilib memory leakni oldini olish
+     */
+    override fun onDestroyView() {
+        super.onDestroyView()
+        _binding = null
     }
 }

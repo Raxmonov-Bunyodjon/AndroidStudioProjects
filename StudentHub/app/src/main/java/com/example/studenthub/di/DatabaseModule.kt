@@ -3,6 +3,8 @@ package com.example.studenthub.di
 
 import android.content.Context
 import androidx.room.Room
+import com.example.studenthub.data.local.dao.FacultyDao
+import com.example.studenthub.data.local.dao.StudentDao
 import com.example.studenthub.data.local.dao.UserDao
 import com.example.studenthub.data.local.db.AppDatabase
 import dagger.Module
@@ -39,4 +41,20 @@ object DatabaseModule {
      */
     @Provides
     fun provideUserDao(db: AppDatabase): UserDao = db.userDao()
-    }
+
+
+    /**
+     * Provides StudentDao.
+     */
+    @Provides
+    fun provideStudentDao(db: AppDatabase): StudentDao = db.studentDao()
+
+    /**
+     * Provides FacultyDao.
+     */
+    @Provides
+    fun provideFacultyDao(db: AppDatabase): FacultyDao = db.facultyDao()
+
+
+
+}
